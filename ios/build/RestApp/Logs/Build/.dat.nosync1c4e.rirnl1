@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>logFormatVersion</key>
+	<integer>9</integer>
+	<key>logs</key>
+	<dict>
+		<key>3E5C9851-37E8-455D-B60C-E211EB0C4A61</key>
+		<dict>
+			<key>className</key>
+			<string>IDECommandLineBuildLog</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>3E5C9851-37E8-455D-B60C-E211EB0C4A61.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>RestApp project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>RestApp</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Building project RestApp with scheme RestApp and configuration Debug</string>
+			<key>timeStartedRecording</key>
+			<real>586065263.76024902</real>
+			<key>timeStoppedRecording</key>
+			<real>586065268.98415995</real>
+			<key>title</key>
+			<string>Building project RestApp with scheme RestApp and configuration Debug</string>
+			<key>uniqueIdentifier</key>
+			<string>3E5C9851-37E8-455D-B60C-E211EB0C4A61</string>
+		</dict>
+		<key>EF6E59CD-4502-41B9-8654-7CF5AF43485E</key>
+		<dict>
+			<key>className</key>
+			<string>IDECommandLineBuildLog</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>EF6E59CD-4502-41B9-8654-7CF5AF43485E.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>RestApp project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>RestApp</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Building project RestApp with scheme RestApp and configuration Debug</string>
+			<key>timeStartedRecording</key>
+			<real>586065345.08464003</real>
+			<key>timeStoppedRecording</key>
+			<real>586065361.884583</real>
+			<key>title</key>
+			<string>Building project RestApp with scheme RestApp and configuration Debug</string>
+			<key>uniqueIdentifier</key>
+			<string>EF6E59CD-4502-41B9-8654-7CF5AF43485E</string>
+		</dict>
+	</dict>
+</dict>
+</plist>
