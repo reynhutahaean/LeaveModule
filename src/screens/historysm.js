@@ -5,7 +5,7 @@ import { Container, Header, Content, List, ListItem, Text, Left, Right, Icon } f
 export default class historysm extends Component {
   render() {
     return (
-      <Container>
+      <Container style={{backgroundColor:"#fafcff"}}>
         <Content>
           <List>
             <ListItem selected>

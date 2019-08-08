@@ -176,11 +176,10 @@ export default class approvalsm extends Component {
 
     return (
       <View>
-        <ScrollView style={{ marginBottom: 100, backgroundColor: "#fafafa"}}>
+        <ScrollView style={{ marginBottom: 100, backgroundColor: "#fafcff"}}>
           <View style={{ paddingTop: 10, paddingLeft: 50, paddingRight: 70, marginBottom:10, flex: 1}}>
             <Text style={myStyle.title}>Leave Type</Text>
             <Dropdown
-              label='Choose Leave Type'
               value={this.leaveTypeLabel}
               onChangeText={(leaveType) => { this.setState({ leaveType }) }}
             />
@@ -284,7 +283,6 @@ export default class approvalsm extends Component {
             <Text style={myStyle.title}>Project</Text>
             <Dropdown
               editable={this.state.textDisabled}
-              label='Choose Your Project'
               value={this.state.project}
               onChangeText={(project) => this.setState({ project })}
             />

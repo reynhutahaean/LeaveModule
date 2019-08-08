@@ -265,15 +265,21 @@ export default class edit extends Component {
       today = today
     }
 
+    var sm = "Marisa"
+    if (this.state.project == "Internet Banking") {
+      sm = "Ryan"
+    } else {
+      sm = sm
+    }
+
     return (
       <View>
         {/* <Text style={{fontFamily:"Lato", fontSize: 14, color:'red', textAlign:'center', marginTop:10, display: this.state.textLabelError ? "flex" : "none"}}>Please Complete Form before Submit </Text>
         <Text style={{fontFamily:"Lato", fontSize: 14, color:'green', textAlign:'center', marginTop:10, display: this.state.textLabelSuccess ? "flex" : "none"}}>Form can be Submit </Text> */}
-        <ScrollView style={{ marginBottom: 90, backgroundColor: "#fafafa"}}>
+        <ScrollView style={{ marginBottom: 90, backgroundColor: "#fafcff"}}>
           <View style={{ paddingTop: 10, paddingLeft: 50, paddingRight: 70, marginBottom:10, flex: 1}}>
             <Text style={myStyle.title}>Leave Type</Text>
             <Dropdown
-              label='Choose Leave Type'
               value={this.state.leaveType}
               data={leave}
               onChangeText={(leaveType) => {
@@ -426,24 +432,21 @@ export default class edit extends Component {
             <Text style={myStyle.title}>Project</Text>
             <Dropdown
               style={this.state.projectValidate}
-              label='Choose Your Project'
               value={this.state.project}
               data={projects}
               onChangeText={(project) => {
-                this.validate(project, 'project'), 
+                this.validate(project, 'project')
                 this.setState({ project })
               }}
             />
             <Text style={{display : this.state.showText ? "flex" : "none"}}>{this.state.EmployeeId}</Text>
             <Text style={myStyle.title}>Scrum Master</Text>
-            <Dropdown
-              label='Choose Your Scrum Master'
-              value={this.state.sm}
-              data={sm}
-              onChangeText={(sm) => {
-                this.validate(sm, 'sm'),
-                this.setState({ sm })}}
-            />
+            <TextInput 
+              style={myStyle.form}
+              editable={this.state.textDisabled}
+              value={sm}
+              >
+            </TextInput>
             <Text style={myStyle.title}>Purpose</Text>
             <TextInput
               value={this.state.purpose}

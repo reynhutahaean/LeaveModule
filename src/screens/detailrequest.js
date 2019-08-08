@@ -12,7 +12,8 @@ const myStyles = StyleSheet.create({
   TouchableOpacityStyle: {
     margin: 20,
     flexDirection: 'row',
-    justifyContent: 'space-between'
+    justifyContent: 'space-between',
+    backgroundColor: "#fafcff"
   }
 })
 
@@ -87,7 +88,7 @@ export default class detailrequest extends Component {
     }
 
     return (
-      <View>
+      <View style={{backgroundColor: "#fafcff", flex:1}}> 
         <View style={myStyles.TouchableOpacityStyle}>
           <TouchableOpacity onPress={() => this.props.navigation.navigate("EditScreen", { data: this.data })}>
             <View>

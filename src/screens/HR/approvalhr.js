@@ -64,7 +64,7 @@ export default class approvalhr extends Component {
       "ApprovalStatus" : this.state.ApprovalStatus
     }
 
-    if (this.state.ApprovalStatus == 20) {
+    if (this.state.ApprovalStatus == 25) {
       Resource.approveLeaveHR(body, this.data.id)
       .then((res) => {
         this.resetForm();
@@ -75,7 +75,7 @@ export default class approvalhr extends Component {
             { text: 'OK', onPress: () => this.props.navigation.navigate("AwaitingTabHR") },
           ],
         );
-        // alert(JSON.stringify(body))
+        // alert(JSON.stringify(body))s
       })
       .catch((err) => {
         alert(JSON.stringify(err))
@@ -233,7 +233,7 @@ export default class approvalhr extends Component {
                 }
               }}
             />
-            <Text style={{ fontSize: 16, fontFamily: "Lato-Black", marginTop: 25 }}>Total Leave Taken</Text>
+            <Text style={{ fontSize: 16, fontFamily: "Lato-Black", marginTop: 25 }}>Total Leave</Text>
             <Item disabled style={myStyle.form}>
               <TextInput
                 value={this.state.totalLeaveTaken.toString()}>
@@ -353,7 +353,7 @@ export default class approvalhr extends Component {
                 }
               }}
             />
-            <Text style={{ fontSize: 16, fontFamily: "Lato-Black", marginTop: 25 }}>Total Leave Taken</Text>
+            <Text style={{ fontSize: 16, fontFamily: "Lato-Black", marginTop: 25 }}>Total Leave</Text>
             <TextInput
               editable={this.state.textDisabled}
               style={myStyle.form}

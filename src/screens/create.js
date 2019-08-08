@@ -26,6 +26,8 @@ const myStyle = StyleSheet.create({
     shadowRadius: 0.1,
 
     elevation: 0,
+    fontFamily: "Lato",
+    fontSize: 16
   },
   title: {
     fontSize: 17,
@@ -438,20 +440,23 @@ export default class create extends Component {
               value={this.state.Project}
               data={projects}
               onChangeText={(Project) => {
-                this.validate(Project, 'project'), 
+                this.validate(Project, 'project')
+                if (Project == "Internet Banking") {
+                  this.setState({ SM: "Ryan Edie" })
+                } else {
+                  this.setState({ SM: "Marisa Sletri" })
+                }
                 this.setState({ Project })
               }}
             />
             <Text style={{display : this.state.showText ? "flex" : "none"}}>{this.state.EmployeeId}</Text>
             <Text style={myStyle.title}>Scrum Master</Text>
-            <Dropdown
-              label='Choose Your Scrum Master'
+            <TextInput 
+              style={myStyle.form}
+              editable={this.state.textDisabled}
               value={this.state.SM}
-              data={sm}
-              onChangeText={(SM) => {
-                this.validate(SM, 'sm'),
-                this.setState({ SM })}}
-            />
+              onChangeText={(SM) => this.setState({ SM })}>
+            </TextInput>
             <Text style={myStyle.title}>Purpose</Text>
             <TextInput
               style={[myStyle.form, !this.state.purposeValidate ? myStyle.error : null]}

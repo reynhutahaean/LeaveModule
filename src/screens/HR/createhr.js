@@ -179,14 +179,14 @@ export default class createsm extends Component {
     Resource.createLeave(body)
       .then((res) => {
         this.resetForm();
-        // Alert.alert(
-        //   'Request has been created',
-        //   'Press OK to Home',
-        //   [
-        //     { text: 'OK', onPress: () => this.props.navigation.navigate("MainScreenSm") },
-        //   ],
-        //   { cancelable: false },
-        // );
+        Alert.alert(
+          'Request has been created',
+          'Press OK to Home',
+          [
+            { text: 'OK', onPress: () => this.props.navigation.navigate("MainScreenSm") },
+          ],
+          { cancelable: false },
+        );
         alert(JSON.stringify(body))
       })
       .catch((err) => {

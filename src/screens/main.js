@@ -61,7 +61,7 @@ export default class main extends Component {
   render() {
 
     return (
-      <View style={{flex:1, backgroundColor: "#fafcff"}}>
+      <View style={{flex:1, backgroundColor: "#fafcff"}} >
         <View style={{marginBottom:30}}>
           <TouchableOpacity onPress={() => this.props.navigation.navigate("CreateScreen")}>
             <View>
